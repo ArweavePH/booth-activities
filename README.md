@@ -22,7 +22,9 @@ Handlers.add(
 )
 ```
 
-Once done, do `.done` and submit. 4. For participants:
+Once done, do `.done` and submit.
+
+4. For participants:
 
 ```
 Send({ Target = HelloWorld, Action = "HelloWorld", Codename = "<insert name>", Message = "<insert message>" })
