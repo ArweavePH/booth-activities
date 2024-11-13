@@ -4,10 +4,10 @@ import { ModalQuestion } from "@/components";
 import { IBlockResponse } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import {
-  Check as CheckIcon,
-  LinkBreak as LinkBreakIcon,
-  Link as LinkIcon,
-  QuestionMark as QuestionMarkIcon,
+    Check as CheckIcon,
+    LinkBreak as LinkBreakIcon,
+    Link as LinkIcon,
+    QuestionMark as QuestionMarkIcon,
 } from "@phosphor-icons/react";
 import { useState } from "react";
 
@@ -32,7 +32,7 @@ export const Block = ({ isLast, timeLeft, block, onChained }: IBlock) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-col md:flex-row md:gap-4 items-center">
       <button
         onClick={handleToggleModal}
         className={cn(
@@ -48,7 +48,7 @@ export const Block = ({ isLast, timeLeft, block, onChained }: IBlock) => {
         )}
       </button>
       {!isLast && (
-        <div className="h-10 flex justify-center">
+        <div className="w-10 h-10 flex justify-center">
           {!isAnswered ? (
             <LinkBreakIcon className="w-12 h-12 text-gray-500" />
           ) : (

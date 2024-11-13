@@ -80,7 +80,7 @@ export default function Home() {
               <Timer timeLeft={timeLeft} />
             </div>
 
-            <div className="space-y-4">
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
               {blocks.map((q: IBlockResponse, index: number) => (
                 <Block
                   key={q.Question}
