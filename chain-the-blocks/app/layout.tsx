@@ -1,7 +1,6 @@
 import "@/app/globals.css";
-import { GradientLine } from "@/components";
+import { ConnectButton, GradientLine } from "@/components";
 import { WalletProvider } from "@/providers/wallet.provider";
-import { ConnectButton } from "arweave-wallet-kit";
 import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import Image from "next/image";
@@ -48,7 +47,7 @@ export default function RootLayout({
                   className="w-auto h-16"
                 />
               </Link>
-              <ConnectButton accent="#000" />
+              <ConnectButton />
             </div>
           </footer>
         </WalletProvider>
